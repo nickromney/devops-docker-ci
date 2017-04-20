@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # brunch-plain-simple
 
 This is a minimalistic, plain, and customizable single-page app skeleton built using Brunch.
@@ -169,3 +170,7 @@ Licensed under [MIT License](LICENSE).
 [dploy-docs]: https://github.com/LeanMeanFightingMachine/dploy
 [heroku]: https://dashboard.heroku.com/
 [issues]: https://github.com/tkesgar/brunch-plain-simple/issues
+=======
+# devops-docker-ci
+An example of building a CI pipeline with GitHub and Docker
+>>>>>>> 1408f5bf3c50c0d08fe78578b0ee5a0a57998a63
