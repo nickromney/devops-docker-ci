@@ -1,9 +1,9 @@
-const express = require('express')
+const express = require('express');
 
-const port = process.env.PORT || 8080
-const basedir = __dirname + '/public'
+const port = process.env.PORT || 8080;
+const basedir = __dirname + '/public';
 
-const app = express()
+const app = express();
 
 // HTML5 pushState: serve static files or index.html for everything else
 app.use(express.static(basedir));
