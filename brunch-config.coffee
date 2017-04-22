@@ -2,7 +2,7 @@ module.exports =
 
   paths:
     # Ignore test folder
-    watched: ['app', 'vendor']
+    watched: ['app', 'test', 'vendor']
 
   # Separate lib/app
   # Also separate test so we can remove it from production

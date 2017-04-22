@@ -2,16 +2,22 @@
 const expect = require('chai').expect
 
 
-describe('DOM tests - Add Todo form', function() {
-  var todoForm = document.forms[0];
-  var addButton = todoForm.buttons[0];
+describe('information at root directory of server',
+  function() {
+  it('is connecting locally', function(done) {
+  // pass in our server to supertest
+  request(app)
+    .get('/')
+    // test passes if statusCode is 200
+    .expect(200, function(err, data) {
+      // display error in terminal 
+      console.log('error: ', err);
+      // data is everything we get back from the server
+      console.log('data: ', data);
+    })
+    // test will timeout without end
+    .end(done);
+  });
 
-  it('Form exists in the DOM', function() {
-    expect(todoForm).to.not.equal(null);
-  });
- 
-  it('Add button has the correct text', function() {
-    expect(addButton.innerHTML).to.equal('Add Todo');
-  });
 });
 
