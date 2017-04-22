@@ -1,10 +1,17 @@
 // Chai expect
 const expect = require('chai').expect
 
-// Title test
-describe('Title check', function() {
-    it('should return when the title has Brunch Plain Simple', function() {
-      expect(wrapper.find('title').textContent).to.equal('Brunch Plain Simple - under version control');
-    })
-})
+
+describe('DOM tests - Add Todo form', function() {
+  var todoForm = document.forms[0];
+  var addButton = todoForm.buttons[0];
+
+  it('Form exists in the DOM', function() {
+    expect(todoForm).to.not.equal(null);
+  });
+ 
+  it('Add button has the correct text', function() {
+    expect(addButton.innerHTML).to.equal('Add Todo');
+  });
+});
 
