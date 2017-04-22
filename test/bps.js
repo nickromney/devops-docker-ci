@@ -1,5 +1,7 @@
 // Chai expect
-const expect = require('chai').expect
+const expect = require('chai').expect;
+var request = require('supertest');
+var app = require('../server.js');
 
 
 describe('information at root directory of server',
